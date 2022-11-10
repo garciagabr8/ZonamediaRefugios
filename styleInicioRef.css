@@ -1,0 +1,296 @@
+
+/*InicioNormal*/
+body{
+  
+    font-family: 'Cherry Swash',cursive;
+    background-color: rgb(100, 157, 163);
+   
+    
+}
+
+.form{
+   
+    background-color: rgb(139, 194, 157);
+  /* color de fondo*/ 
+    position:absolute;  /*posicion */ 
+    height: 550px;    /*altura */ 
+    width:  1030px;  /*ancho */ 
+    margin-left: 20px;
+    margin-right: 10px; /*margen derecho */ 
+    margin-top: 50px; /*margen arriba */ 
+    border-radius: 0px;  /*redondear las esquinas */ 
+    box-shadow: 5px 5px 5px black;  /*sombra */
+}
+.imgRedonda {
+    width:200px;
+    height:200px;
+    border-radius:150px;
+    margin-top: 0px;
+    margin-left: 60px;
+}
+
+h1{
+     /* etiqueta de html*/  
+        margin-top: 20px; /*margen arriba */ 
+        font-size: 50px; /*tamaño letra*/
+        text-align: center;  /*alinear texto */  
+        font-family: 'Cherry Swash',cursive;
+
+}
+.botoned{
+    margin-left: 20px;
+    margin-top: 0px;
+    height: 40px;  /*altura */ 
+    width: 150px;  /*ancho */ 
+    background: white;  /*fondo */ 
+    border: none;  /*borde */ 
+    border-radius: 5px;  /*redondear esquinas */ 
+    font-family: 'Cherry Swash',cursive;
+
+}
+
+p a{
+    margin-top: 10px;
+    margin-left: 0px;
+    height: 40px;
+    width: 150px;
+    background: rgb(65, 53, 71); /* color de fondo*/
+    border: none; /*borde*/
+    border: white 1px solid; 
+    border-radius: 5px;
+    color: white;
+}
+
+.botonce{
+    margin-left: 15px;
+    margin-top: 0px;
+    height: 40px;  /*altura */ 
+    width: 150px;  /*ancho */ 
+    background: white;  /*fondo */ 
+    border: none;  /*borde */ 
+    border-radius: 5px;  /*redondear esquinas */ 
+  
+    font-size: 15px; /*tamaño letra*/
+    font-family: 'Cherry Swash',cursive;
+
+}
+
+
+.superior{
+  margin-top: 0px;
+ 
+}
+.botonmo{
+    margin-left: 50px;
+    margin-top: 0px;
+    height: 40px;  /*altura */ 
+    width: 150px;  /*ancho */ 
+    background:rgb(119, 121, 151);
+    /*fondo */ 
+    border: none;  /*borde */ 
+    border-radius: 5px;  /*redondear esquinas */
+    position: absolute;
+    font-size: 15px; /*tamaño letra*/
+    font-family: 'Cherry Swash',cursive;
+
+}
+.au{
+    height: 40px;  /*altura */ 
+    width: 150px;  /*ancho */ 
+    background: white;  /*fondo */ 
+    border: none;  /*borde */ 
+    border-radius: 5px;  /*redondear esquinas */
+    position: absolute;
+    font-size: 15px; /*tamaño letra*/
+    font-family: 'Cherry Swash',cursive;
+
+}
+.botonmoo{
+    margin-left: 200px;
+    margin-top: 0px;
+    height: 40px;  /*altura */ 
+    width: 150px;  /*ancho */ 
+     background: rgb(186, 186, 204); /*fondo */ 
+    border: none;  /*borde */ 
+    border-radius: 5px;  /*redondear esquinas */
+    position: absolute;
+    font-size: 15px; /*tamaño letra*/
+    font-family: 'Cherry Swash',cursive;
+
+}
+.botonan{
+    padding-bottom: 10px;
+    margin-left: 400px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    height: 40px;  /*altura */ 
+    padding-left: 12px;
+    width: 150px;  /*ancho */ 
+    background: rgb(186, 186, 204);
+  /*fondo */ 
+    border:aquamarine;  /*borde */ 
+    border-radius: 5px;  /*redondear esquinas */ 
+    position: absolute;
+    
+    font-size: 15px; /*tamaño letra*/
+    font-family: 'Cherry Swash',cursive;
+
+}
+
+.tabla{
+    border: 1px solid rgb(201, 186, 186);
+    border-collapse: separate;
+    border-spacing: 5px;
+    background-color: rgb(189, 183, 186);  /* color de fondo*/ 
+    position: absolute;  /*posicion */
+    top: 205px;
+    height: auto;    /*altura */ 
+    width:  auto;  /*ancho */ 
+    margin-top: 130px;
+    margin-left: 500px; /*margen izquierdo */ 
+    margin-right: 10px; /*margen derecho */ 
+    margin-bottom: 500px;
+    border-radius: 10px;  /*redondear las esquinas */ 
+    box-shadow: 5px 5px 5px black;  /*sombra */
+    width: 500px; 
+    font-family: 'Cherry Swash',cursive;
+ 
+}
+td{
+border: 1px solid rgb(29, 26, 59);
+}
+.per{
+    width: 300px; float: left;
+    margin-left: 450px;
+    margin-top: 0px;
+    margin-right: 0px;
+    height: 200px;
+}
+.usua{
+    margin-top: 20px; /*margen arriba */ 
+    font-size: 80px; /*tamaño letra*/
+    font-family: 'Cherry Swash',cursive;
+
+}
+a .cs{
+    background:rgb(119, 121, 151);/*fondo */ 
+    font-size: 15px; /*tamaño letra*/
+    font-family: 'Cherry Swash',cursive;
+
+}
+
+a .cv{
+    background:rgb(119, 121, 151); /*fondo */ 
+    font-size: 15px; /*tamaño letra*/
+    font-family: 'Cherry Swash',cursive;
+
+}
+a .au{
+    background: rgb(186, 186, 204); /*fondo */ 
+    font-size: 15px; /*tamaño letra*/
+    font-family: 'Cherry Swash',cursive;
+
+}
+.ed{
+    background:rgb(119, 121, 151); /*fondo */ 
+    font-size: 15px; /*tamaño letra*/
+    font-family: 'Cherry Swash',cursive;
+
+}
+.boto{
+    padding-bottom: 10px;
+    margin-left:200px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    height: 40px;  /*altura */ 
+    padding-left: 12px;
+    width: 150px;  /*ancho */ 
+    background: rgb(186, 186, 204);  /*fondo */ 
+    border: none;
+    border-radius: 5px;  /*redondear esquinas */ 
+    position: absolute;
+    font-size: 15px; /*tamaño letra*/
+    font-family: 'Cherry Swash',cursive;
+
+}
+
+.boto1{
+    padding-bottom: 5px;
+    margin-left: 0px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    height: 30px;  /*altura */ 
+    width: 150px;  /*ancho */ 
+    background:rgb(249, 249, 253);
+    /*fondo */ 
+    border: none;  /*borde */ 
+    border-radius: 5px;  /*redondear esquinas */
+    position: absolute;
+    font-size: 15px; /*tamaño letra*/
+    font-family: 'Cherry Swash',cursive;
+
+}
+
+.botos{
+    padding-bottom: 10px;
+    margin-left: 200px;
+    margin-top: 130px;
+    margin-bottom: 10px;
+    height: 30px;  /*altura */ 
+    padding-left: 12px;
+    width: 150px;  /*ancho */ 
+    background: rgb(186, 186, 204);
+    /*fondo */ 
+    border: none;
+    border-radius: 5px;  /*redondear esquinas */ 
+    position: absolute;
+    font-size: 15px; /*tamaño letra*/
+    font-family: 'Cherry Swash',cursive;
+
+}
+
+.boto2{
+    margin-left: 0px;
+    margin-top: 130px;
+    margin-bottom: 10px;
+    height: 30px;  /*altura */ 
+    width: 150px;  /*ancho */ 
+    background: rgb(232, 223, 233);  /*fondo */ 
+    border: none;  /*borde */ 
+    border-radius: 5px;  /*redondear esquinas */
+    position: absolute;
+    font-size: 15px; /*tamaño letra*/
+    font-family: 'Cherry Swash',cursive;
+
+}
+.form1{
+    width: 27%; float: left;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+.nom{
+    margin-left: 80px;
+}
+.form2{
+    width: 600px; float: inline-start;
+    margin-left: 450px;
+    margin-top: 0px;
+    margin-right: 0px;
+    height: 200px;
+}
+.con{
+    margin-left: 450px;
+    margin-top: 0px;
+}
+.ali{
+    margin-top: 20px;
+    margin-left: 63px;
+}
+.form3{
+    width: 20%; float: inline-end;
+    margin-left: 80px;
+    margin-top: 0px;
+    margin-right: 30px;
+}
+/*fin*/

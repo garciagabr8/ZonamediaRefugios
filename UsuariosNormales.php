@@ -1,0 +1,286 @@
+<?php
+$val = 0;
+if(isset($_POST['nombre'])){
+    $_POST['nombre'] = filter_var($_POST['nombre'],FILTER_SANITIZE_STRING);
+    $_POST['nombre'] = trim($_POST['nombre']); //quita espacios al inicio
+    $_POST['nombre'] = htmlspecialchars($_POST['nombre']); //limpia caracteres
+    $_POST['nombre'] = stripslashes($_POST['nombre']); //remueve diagonales
+    if(empty($_POST ['nombre'])){
+        echo "<p class='alert1'>Introduzca su nombre</p>";
+    }else{
+        $val + 1;
+    }
+}
+if(isset($_POST['nombreu'])){
+    $_POST['nombreu'] = filter_var($_POST['nombreu'],FILTER_SANITIZE_STRING);
+    $_POST['nombreu'] = trim($_POST['nombreu']); //quita espacios al inicio
+    $_POST['nombreu'] = htmlspecialchars($_POST['nombreu']); //limpia caracteres
+    $_POST['nombreu'] = stripslashes($_POST['nombreu']); //remueve diagonales
+    if(empty($_POST ['nombreu'])){
+        echo "<p class='alert1'>Introduzca un nombre de usuario</p>";
+    }else{
+        $val + 1;
+    }
+}
+
+if(isset($_POST['apep'])){
+    $_POST['apep'] = filter_var($_POST['apep'],FILTER_SANITIZE_STRING);
+    $_POST['apep'] = trim($_POST['apep']); //quita espacios al inicio
+    $_POST['apep'] = htmlspecialchars($_POST['apep']); //limpia caracteres
+    $_POST['apep'] = stripslashes($_POST['apep']); //remueve diagonales
+    if(empty($_POST ['apep'])){
+        echo "<p class='alert1'>Introduzca un apellido paterno</p>";
+    }else{
+        $val + 1;
+    }
+}
+
+if(isset($_POST['apem'])){
+    $_POST['apem'] = filter_var($_POST['apem'],FILTER_SANITIZE_STRING);
+    $_POST['apem'] = trim($_POST['apem']); //quita espacios al inicio
+    $_POST['apem'] = htmlspecialchars($_POST['apem']); //limpia caracteres
+    $_POST['apem'] = stripslashes($_POST['apem']); //remueve diagonales
+    if(empty($_POST ['apem'])){
+        echo "<p class='alert1'>Introduzca un apellido materno</p>";
+    }else{
+        $val + 1;
+    }
+}
+
+
+ if(isset($_POST['email'])){
+     $_POST['email'] = filter_var($_POST['email'],FILTER_SANITIZE_EMAIL);
+     // Queremos que el email tenga un formato adecuado
+     if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $_POST['email'] )) {
+           echo "<p class='alert1'>'Formato de correo eléctronico incorrecto'</p>";
+             }
+ if (empty($_POST["email"])) {
+     echo "<p class='alert1'>Introduzca un correo eléctronico</p>";
+ }
+    
+ }
+
+if(isset($_POST['ndom'])){
+    $_POST['ndom'] = filter_var($_POST['ndom'],FILTER_SANITIZE_NUMBER_INT);
+    if(empty($_POST ['ndom'])){
+        echo "<p class='alert1'>Introduzca un número de domicilio</p>";
+    }else{
+        $val + 1;
+    }
+}
+
+if(isset($_POST['tel'])){
+
+    $_POST['tel'] = preg_replace('/[^\d]/', "",$_POST['tel']);
+    // $_POST['telefono'] = strlen($_POST['telefono']);
+    $ar= strlen($_POST['tel']);
+    if ($ar < 10 ){
+    
+        
+        echo "<p class='alert1'>Formato de teléfono incorrecto</p>";
+    }
+    if(empty($_POST ['tel'])){
+        echo "<p class='alert1'>Introduzca un número telefónico</p>";
+    }else{
+        $val + 1;
+    }
+    
+}
+
+//https://www.youtube.com/watch?v=cka0J41iJY0
+
+if(isset($_POST['n_establecimiento'])){
+    $_POST['n_establecimiento'] = filter_var($_POST['n_establecimiento'],FILTER_SANITIZE_STRING);
+    $_POST['n_establecimiento'] = trim($_POST['n_establecimiento']); //quita espacios al inicio
+    $_POST['n_establecimiento'] = htmlspecialchars($_POST['n_establecimiento']); //limpia caracteres
+    $_POST['n_establecimiento'] = stripslashes($_POST['n_establecimiento']); //remueve diagonales
+    if(empty($_POST ['n_establecimiento'])){
+        echo "<p class='alert1'>Introduzca el número del establecimiento del refugio</p>";
+    }else{
+        $val + 1;
+    }
+}
+
+if(isset($_POST['calle'])){
+    $_POST['calle'] = filter_var($_POST['calle'],FILTER_SANITIZE_STRING);
+    $_POST['calle'] = trim($_POST['calle']); //quita espacios al inicio
+    $_POST['calle'] = htmlspecialchars($_POST['calle']); //limpia caracteres
+    $_POST['calle'] = stripslashes($_POST['calle']); //remueve diagonales
+    if(empty($_POST ['calle'])){
+        echo "<p class='alert1'>Introduzca la calle donde se ubica su domicilio</p>";
+    }else{
+        $val + 1;
+    }
+}
+
+if(isset($_POST['col'])){
+    $_POST['col'] = filter_var($_POST['col'],FILTER_SANITIZE_STRING);
+    $_POST['col'] = trim($_POST['col']); //quita espacios al inicio
+    $_POST['col'] = htmlspecialchars($_POST['col']); //limpia caracteres
+    $_POST['col'] = stripslashes($_POST['col']); //remueve diagonales
+    if(empty($_POST ['col'])){
+        echo "<p class='alert1'>Introduzca una colonia</p>";
+    } else {
+        $val + 1;
+    }
+}
+
+
+if(isset($_POST['mun'])){
+    $_POST['mun'] = filter_var($_POST['mun'],FILTER_SANITIZE_STRING);
+    $_POST['mun'] = trim($_POST['mun']); //quita espacios al inicio
+    $_POST['mun'] = htmlspecialchars($_POST['mun']); //limpia caracteres
+    $_POST['mun'] = stripslashes($_POST['mun']); //remueve diagonales
+    if(empty($_POST ['mun'])){
+        echo "<div class='alert1'>Introduzca un municipio</div>";
+    }else{
+        $val + 1;
+    }
+}
+
+if(isset($_POST['pw'])){
+   
+    if(empty($_POST ['pw'])){
+        
+       
+    $digitos= strlen($_POST['pw']);
+if($digitos<10){
+    echo "<p class='alert1'>La contraseña es demacidao corta </p>";
+}
+echo "<p class='alert1'>Introduzca una contraseña</p>";
+
+    }else{
+        $val + 1;
+    }
+}
+if(isset($_POST['pw2'])){
+   
+    if(empty($_POST ['pw2'])){
+        
+     if($_POST['pw2']!=$_POST['pw']){
+        echo "<p class='alert1'>La contraseña de confirmación no corresponde con la anterior</p>";
+     }
+echo "<p class='alert1'>Confirme su contraseña</p>";
+
+    }else{
+        $val + 1;
+    }
+}
+
+  ?>
+
+<?php
+
+// switch($val == 9) {
+    include 'Conexion.php';
+    if(isset($_POST ['nombre']) && !empty($_POST ['nombre']) &&
+    isset($_POST ['apep']) && !empty($_POST ['apep']) &&
+    isset($_POST ['apem']) && !empty($_POST ['apem']) &&
+    isset($_POST ['nombreu']) && !empty($_POST ['nombreu']) &&
+    isset($_POST ['calle']) && !empty($_POST ['calle']) &&
+    isset($_POST ['ndom']) && !empty($_POST ['ndom']) && 
+    isset($_POST ['col']) && !empty($_POST ['col']) &&
+    isset($_POST ['mun']) && !empty($_POST ['mun']) &&
+    isset($_POST ['tel']) && !empty($_POST ['tel']) &&
+    isset($_POST ['email']) && !empty($_POST ['email']) &&
+    isset($_POST ['pw']) && !empty($_POST ['pw']) &&
+    isset($_POST ['pw2']) && !empty($_POST ['pw2']) &&
+    $_POST['pw'] == $_POST['pw2']) {
+    $con = mysqli_connect($host, $user,$password,$db) 
+            or die("problema al conectar");
+    mysqli_select_db($con,$db)
+    or die("problema al conectar BD");
+    
+    mysqli_query($con, "INSERT INTO usuarios (nombre, apellido1, apellido2,nombre_usuario, calle, numero_domicilio, colonia, municipio, telefono,email,Contraseña) VALUES "." ('$_POST[nombre]', '$_POST[apep]', '$_POST[apem]','$_POST[nombreu]', '$_POST[calle]', '$_POST[ndom]', '$_POST[col]', '$_POST[mun]', '$_POST[tel]', '$_POST[email]','$_POST[pw]')");
+    echo 'datos insertados.<br>';
+    
+    echo "Nombre:" . $_POST['nombre'] . "<br>";
+    echo "Apellido Paterno:" . $_POST['apep'] . "<br>";
+    echo "Apellido Materno:" . $_POST['apem'] . "<br>";
+    echo "Nombre usuario:" . $_POST['nombreu'] . "<br>";
+    echo "Calle:" . $_POST['calle'] . "<br>";
+    echo "Numero domicilio:" . $_POST['ndom'] . "<br>";
+    echo "Colonia:" . $_POST['col'] . "<br>";
+    echo "Municipio:" . $_POST['mun'] . "<br>";
+    echo "Telefono:" . $_POST['tel'] . "<br>";
+    echo "Correo:" . $_POST['email'] . "<br>";
+    
+    } 
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleformularioUN.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="contenedor">
+    
+<div class="formularios">
+<form name="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" novalidate="novalidate" >
+<h3>Complete la información requerida para crear un usuario normal</h3>
+<br>
+        <label>Nombre</label>
+        <input type="text" name="nombre" required="">
+        <br><br>
+        
+        <label>Apellido Paterno</label>
+        <input type="text" name="apep" required="">
+        <br><br>
+        
+        <label>Apellido Materno</label>
+        <input type="text" name="apem" required="">
+        <br><br>
+
+        <label>Nombre del usuario</label>
+        <input type="text" name="nombreu" required="">
+        <br><br>
+        
+        <label>Nombre de la Calle</label>
+        <input type="text" name="calle" required="">
+        <br><br>
+        
+        <label>Número de domicilio</label>
+        <input type="text" name="ndom" required="">
+        <br><br>
+        
+        <label>Colonia</label>
+        <input type="text" name="col" required="">
+        <br><br>
+        
+        <label>Municipio</label>
+        <input type="text" name="mun" required="">
+        <br><br>
+        
+        <label>Teléfono</label>
+        <input type="text" name="tel" required="">
+        <br><br>
+
+        <label>Correo Eléctronico</label>
+        <input type="email" name="email" required="">
+        <br><br>
+
+        <label>Contraseña</label>
+        <input type="password" name="pw" required="">
+        <br><br>
+    
+        <label>Confirmar Contraseña<label>
+        <input type="password" name="pw2" required="">
+        <br>
+
+        <button type="submit" id="boton" class="enviar">Enviar datos</button>
+        <a href="LoginUS.php"><button type="button">Volver</button></a>
+        
+</form>
+<?php
+
+?>
+</body>
+    </div>
+        </div>
+</html>

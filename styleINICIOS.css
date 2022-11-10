@@ -1,0 +1,81 @@
+/*Formato refuguios animales*/
+body {
+	font-size: 12px;
+	font-family: 'Cherry Swash',cursive;
+    background-image: url(Perros.png);
+   
+
+}
+h2 {
+	text-align: center;
+	margin: 40px 0 40px;
+	text-align: center;
+	font-size: 30px;
+	color: #ecedee;
+	text-shadow: 2px 2px 4px #000000;
+    font-family: 'Cherry Swash',cursive;
+
+}
+tr {
+	text-align: center;
+	margin: 40px 0 40px;
+	text-align: center;
+	font-size: 18px;
+	color: #ecedee;
+	text-shadow: 2px 2px 4px #000000;
+    font-family: 'Cherry Swash',cursive;
+
+}
+.ref{
+    width:300px ;
+    background: rgb(133, 189, 186);
+   
+    padding: 12px ;
+    
+    border-radius: 12px ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-color: rgb(1, 1, 31);
+    
+}
+.for{
+    background:rgb(149, 197, 163);
+    
+    border-radius: 20px 0,0;
+    width: 500px ;
+    position: absolute;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.bot{
+    width: 150px;
+    background: rgb(119, 121, 151);
+    padding: 8px 0;
+    color:rgb(12, 38, 38);
+    margin-left: 150px;
+    margin-right: 200px;
+    margin-top: 20px;
+    font-size: 15px ;
+    font-family: 'Cherry Swash',cursive;
+}
+.bots{
+    width: 150px;
+    background:rgb(119, 121, 151);
+    padding: 8px 0;
+    color:rgb(12, 38, 38);
+    margin-left: 110px;
+    margin-right: 150px;
+    margin-top: 0px;
+    font-size: 15px ;
+    font-family: 'Cherry Swash',cursive;
+}
+p a{
+    width: 150px;
+    background: rgb(119, 121, 151);
+    padding: 8px 0;
+    color:rgb(12, 38, 38);
+    margin-left: 90px;
+    margin-right: 100px;
+    margin-top: 0px;
+    font-size: 15px ;
+    font-family: 'Cherry Swash',cursive;
+}
